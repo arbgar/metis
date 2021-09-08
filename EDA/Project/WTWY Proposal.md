@@ -1,10 +1,4 @@
-![](https://github.com/arbgar/metis/blob/main/EDA/Project/image-20210908140426687.png)
-
-<img src="https://github.com/arbgar/metis/blob/main/EDA/Project/image-20210908140426687.png" style="zoom:25%" />
-
-<p align = "center"><font size="8"> WDA </font>
-</p>
-
+![](https://github.com/arbgar/metis/blob/main/EDA/Project/WDA_logo.png)
 
 # Introduction:
 
