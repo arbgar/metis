@@ -1,9 +1,7 @@
-<img src="/Users/alisongarrett/Downloads/image-20210908140426687.png" alt="image-20210908140426687" style="zoom:25%;" />
+![](https://github.com/arbgar/metis/blob/main/EDA/Project/image-20210908140426687.png)
 
-<p align = "center">
-<font size="5"> WDA </font>
+<p align = "center"><font size="8"> WDA </font>
 </p>
-
 
 
 # Introduction:
