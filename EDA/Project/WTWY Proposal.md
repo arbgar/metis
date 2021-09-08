@@ -2,7 +2,7 @@
 
 # Introduction:
 
-***Women in Data Analysis*** **(WDA)** is pleased to present this data analytics proposal to **WomenTechWomenYes (WTWY) . **The WTWY objective is to introduce their new and inclusive organization by engaging New Yorkers as they pass through the New York City (NYC) Metropolitan Transit Authority (MTA) subway system.  WTWY has a street team dedicated to this engagement.  The street team's objective is to,
+**Women in Data Analysis** **(WDA)** is pleased to present this data analytics proposal to **WomenTechWomenYes (WTWY)**.  The WTWY objective is to introduce their new and inclusive organization by engaging New Yorkers as they pass through the New York City (NYC) Metropolitan Transit Authority (MTA) subway system.  WTWY has a street team dedicated to this engagement.  The street team's objective is to,
 
 - Introduce the organization and its programs,
 - Identify those who may be interested in increasing women in technology, 
