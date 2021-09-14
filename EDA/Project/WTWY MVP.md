@@ -4,17 +4,17 @@
 
 The core question we are attempting to answer is the best deployment of the WTWY street team to NYC MTA subway stations to maximize the number of people who register with the WTWY.  Secondary questions include maximizing the registrants who will (1) be interested in the WYWT programs, (2) attend the gala and (3) contribute to the cause.
 
-To begin to explore these questions, we assessed over 3 months of NYC MTA subway data to determine the daily station entrance and exit traffic.  The process for this exploration was as follows:
+To begin to explore these questions, we assessed over 3 months of NYC MTA data to determine the daily station entrance and exit traffic.  The process for this exploration was as follows:
 
-- Import url datasets into Jupyter notebook pandas.
+- Import url datasets into jupyter notebook.
 - Added column DATE_TIME / datetime64[ns] datatype.
 - Exported raw data to csv.
 - Imported csv data into a database using sqlite.
-- Brought database into pandas dataframe.
-- Explored database using DB Browser, SQL Alchemy.
+- Brought database into a pandas dataframe.
+- Explored database using DB Browser, SQLAlchemy.
 - Explored dataframe using pandas.
-- Selected REGULAR data as cleaning approach will handle audit anomalies.
-- Calculated the MEAN / STD ENTRIES / EXITS for each unique SCP; noted turnstiles get reset periodically.
+- Selected REGULAR data as cleaning approach handles audit anomalies.
+- Calculated the MEAN / STD ENTRIES / EXITS for each unique SCP; noted turnstiles get reset periodically and not consistently.
 - Dropped turnstile data outside a STD; noted that some of the larger stations may have lost fidelity because of the turnstile resets. 
 - Dropped 11 rows of remaining anomalies.
 - For each unique SCP by DATE, calculated added TRAFFIC per audit and established the TRAFFIC per DATE.
@@ -35,7 +35,9 @@ Subsequently we assessed each top station by date and time as well as station en
 
 As some of these locations could, by themselves, overwhelm the WYWT street team resources, we have investigated added factors to refine these targets.  We have found that technology oriented university and corporation populations may be most interested in the WYTY programs. Our upcoming work will refine these targets by considering these available datasets:
 
-NYC Subway Entrances: (https://data.cityofnewyork.us/Transportation/Subway-Entrances/drex-xx56)
+NYC Subway Entrances: 
+
+https://data.cityofnewyork.us/Transportation/Subway-Entrances/drex-xx56
 
 NYC Universities:
 
