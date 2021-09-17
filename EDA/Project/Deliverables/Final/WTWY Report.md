@@ -16,9 +16,13 @@ Central to this analysis is identification of technology oriented colleges and u
 
 ## Data
 
-This project is based on the following datasets:
+*Fall 2018 MTA Turnstile Dataset:* 2.78M rows of MTA Turnstile data from 08/25/2018 through 11/30/2018. 14 columns uniquely identifying the turnstiles per station, audit date and time, entry and exit counts, and historical line references used to support location identification and linkages.
 
-Summer 2021 Turnstile: 
+*Summer 2021 MTA Turnstile Dataset:* 2.93M rows of MTA Turnstile data from 05/29/2021 through 09/04/2021. 14 columns uniquely identifying the turnstiles per station, audit date and time, entry and exit counts, and historical line references used to support location identification and linkages.
+
+*NYC Colleges and Universities Dataset:* 77 rows of college and university information, one row per institution.  12 columns consisting of name, address, latitude and longitude, url, and city building / lot designators.  This dataset was augmented with the Technology flag to designate institution technology impact.
+
+*NYC MTA Station Location Dataset:* 1866 rows of unique NYC MTA station location including 30 columns of data including station information, latitude and longitude of entrances used to link to the university, route and line numbers, various descriptive characteristics, and historical reference information
 
 ## Algorithms
 
