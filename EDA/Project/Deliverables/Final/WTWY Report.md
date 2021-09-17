@@ -12,7 +12,7 @@ This project analyzes publicly available NYC datasets including [Colleges](https
 
 ## Design
 
-Central to this analysis is identification of technology oriented colleges and universities located in NYC. By assessing the impact of the college and university along with their location relative to the MTA subway stations, we identify target subway stations for canvassing.  After comparing these targets to the list of busiest subway station, we identify additional high traffic stations with a college and university population .
+Central to this analysis is identification of technology oriented colleges and universities located in NYC. By assessing the impact of the college and university along with their location relative to the MTA subway stations, we identify target subway stations for canvasing.  After comparing these targets to the list of busiest subway stations, we identify additional high traffic stations with a college and university population.
 
 ## Data
 
@@ -35,18 +35,19 @@ Central to this analysis is identification of technology oriented colleges and u
 
 Institutions that Lead in Technology are then mapped to the nearest MTA subway station using Latitude / Longitude.
 
-*Refined Street Team Deployment:* This analysis uses MTA Turnstile data to identify the daily Traffic at the college and university locations during Fall 2018.  This pre-covid dataset will most resemble the Fall 2021Traffic as we return to inperson learning and activities.  From this analysis WDA selected the three university stations with the highest traffic, not already in the current street team deployment.  By segmenting the traffic at these stations into day of the week and four hour shift, WDA recommended station, day, and time windows for added street team deployment. 
+*Refined Street Team Deployment:* This analysis uses MTA Turnstile data to identify the daily Traffic at the college and university locations during Fall 2018.  This pre-covid dataset will most resemble the Fall 2021 Traffic as we return to inperson learning and activities.  From this analysis WDA selected the three university stations with the highest traffic, not already in the current street team deployment.  By segmenting the traffic at these stations into day of the week and four hour shifts, WDA recommended station, day, and time windows for added street team deployment. 
 
 ## Tools
 
 - SQLite, SQLAlchemy and DB Browser for database creation and query
 - Numpy and Pandas for data cleaning and manipulation 
 - Matplotlib and Seaborn for plotting
+- Excel pivot and lookup for minor data tagging and station name mapping
 
 ## Communication
 
-The WTWY presentation summarizes the findings in graphical form identifying,
+The WTWY presentation summarizes the findings in graphical format identifying,
 
-- Current street team deployment engagement with colleges and universities,
-- Recommendations, including day and time, for three additional stations to capture the Columbia University, NYU Polytechnic Institute, and NYC City Techn populations, and
-- Options for additional deployment subway stations, days, and times should WTWY have added street teams for college and university engagement.
+- Current street team deployment engagement with colleges and universities;
+- Recommendations, including day and time, for three additional stations to capture the Columbia University, NYU Polytechnic Institute, and NYC City Techn populations; and
+- Options for additional deployment subway stations, days, and times should WTWY want added street teams for college and university engagement.
