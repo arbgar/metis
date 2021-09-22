@@ -14,7 +14,7 @@ My initial analysis will focus on sales price, that is modeling and then predict
 
 # Tools
 
-HomeSnap has a homepage from which users select various parameters including location, property type, and sales status, for their property search. From these parameters, the homepage generates a target list of properties in real time.  I will leverage Selenium to scrape the property list for addresses and then use Beautiful Soup to scrape the detailed property information using their address-based URLs. Once we have the needed Cleveland Park dataset, we will perform multiple linear regression analyses, including validation and testing, using scikit-learn.  
+HomeSnap has a homepage from which users select various parameters including location, property type, and sales status, for their property search. From these parameters, the homepage generates a target list of properties in real time.  I will leverage Selenium to scrape the property list for addresses and then use Beautiful Soup to scrape the detailed property information using address-based URLs. Once I have the needed Cleveland Park dataset, I will perform multiple linear regression analyses, including validation and testing, using scikit-learn.  
 
 # MVP Objective
 
