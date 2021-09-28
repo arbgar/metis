@@ -2,7 +2,7 @@
 
 # Flip It DC
 
-My initial analysis is to predict the price of homes for sale and then look at the delta to the tax record to determine potential value (to buy, fixup, and sell). To gather the data, I scraped approximately 1025 observations of 75 potential features.
+My initial analysis is to predict the price of homes for sale and then look at the delta to the tax record to determine potential value (to buy, fixup, and sell). To gather the data, I scraped approximately 1025 observations of 75 potential features from [homesnap.com](https://www.homesnap.com).
 
 After limiting the regression features to the most complete, straightforward numerical features, I started by using a target of Price/SqFt.  I quickly found limited correlation with some collinearity with other numerical features in the dataset as shown below. 
 
