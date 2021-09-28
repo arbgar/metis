@@ -1,4 +1,4 @@
-![](https://github.com/arbgar/metis/blob/main/Regression%20/Project/Deliverables/FID_Logo.png)
+![](https://github.com/arbgar/metis/blob/main/Regression/Project/Deliverables/FID_Logo.png)
 
 # Flip It DC
 
