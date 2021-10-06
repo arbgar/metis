@@ -1,6 +1,4 @@
-![](https://github.com/arbgar/metis/blob/main/Business%20Fundamentals/Project/Deliverable/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg)
-
-
+![](https://github.com/arbgar/metis/blob/main/Business%20Fundamentals/Project/Deliverable/bf_Picture.png)
 
 # Delivering to Washington DC Food Deserts
 
