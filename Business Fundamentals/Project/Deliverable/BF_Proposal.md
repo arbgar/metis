@@ -31,7 +31,7 @@ Excel and Tableau will be the primary tools for this project.  The data is large
 
 # MVP Objective
 
-The MVP will present an assessment of the Washington DC food deserts as well as an initial look at 4P Foods' ability to meet the need.  The results of the MVP will guide subsequent refinement to include delivery routes and benefits.
+The MVP will present an assessment of the Washington DC food deserts as well as an initial look at the ability of 4P Foods to meet the need.  The results of the MVP will guide subsequent refinement to include delivery routes and benefits.
 
 ###### Credits
 
