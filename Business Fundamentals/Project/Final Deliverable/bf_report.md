@@ -12,7 +12,7 @@ This report, which highlights the widening grocery store gap between 2010 and 20
 
 *... study what unofficial community solutions have already been developed. An answer to food access in Wards 7 and 8 might already exist and just needs to be formalized and scaled. This also ensures any program is building power for residents.*
 
-Fortunately, there are companies like [4P Foods](https://4pfoods.com/), a start-up with a new model of agriculture and a mission to, *Eat Good Food, Change the World: People, Planet, Prosperity, Purpose are the four P’s of 4P Foods.*4P Foods focuses on support to local farmers while ensuring the community has equitable access to the food they produce. During the pandemic 4P Food initially struggled financially with the loss of their wholesale market. But then, delivery sales accelerated, propelling them to 3-fold growth with over 3500 home deliveries each week. ***What if 4P Foods could leverage this success to help eliminate the Washington DC Food Deserts?***
+Fortunately, there are companies like [4P Foods](https://4pfoods.com/), a start-up with a new model of agriculture and a mission to, *Eat Good Food, Change the World: People, Planet, Prosperity, Purpose are the four P’s of 4P Foods*. 4P Foods focuses on support to local farmers while ensuring the community has equitable access to the food they produce. During the pandemic 4P Food initially struggled financially with the loss of their wholesale market. But then, delivery sales accelerated, propelling them to 3-fold growth with over 3500 home deliveries each week. ***What if 4P Foods could leverage this success to help eliminate the Washington DC Food Deserts?***
 
 ## Design
 
@@ -56,7 +56,7 @@ Food Deserts are a relatively straight forward analysis to complete.  The bigges
 
 ## Communication
 
-The Delivering to Washington DC Food Deserts presentation summarizes the findings in graphical format including the following key elements:
+The *Delivering to Washington DC Food Deserts* presentation summarizes the findings in graphical format including the following key elements:
 
 - **Introduction** to the challenges of Food Deserts; with additional presentation time this chart could be expanded significantly
 - Overview of  **4P Foods**, an innovative startup bringing a new agricultural model of support to local farmers and positive impact to the local community
