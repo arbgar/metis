@@ -16,7 +16,7 @@ Fortunately, there are companies like [4P Foods](https://4pfoods.com/), a start-
 
 ## Design
 
-Food Deserts are a signficant challenge in the United States, both in rural and urban communities.  The USDA defines a Food Desert as a low-income census tract where a substantial number or substantial share of residents do not have easy access to a supermarket or large grocery store. Generally this distance is 0.5 miles in urban locations and 10 miles in rural locations.  The challenge is so severe in Washington DC, particularly in Wards 7 and 8, that DC Hunger Solutions has set closing gaps at a distance of 1 mile as its goal.
+Food Deserts are a significant challenge in the United States, both in rural and urban communities.  The USDA defines a Food Desert as a low-income census tract where a substantial number or substantial share of residents do not have easy access to a supermarket or large grocery store. Generally, this distance is 0.5 miles in urban locations and 10 miles in rural locations.  The challenge is so severe in Washington DC, particularly in Wards 7 and 8, that DC Hunger Solutions has set closing gaps at a distance of 1 mile as its goal.
 
 Supporting the DC Hunger Solutions approach, this analysis sets the definition of a Food Desert at 1600 meters (approximately 1 mile) and assesses the impact to all, not just low income, populations.  For the DC Hunger Solutions community approach to be viable, there will need to be residents of all economical situations.  The pilot nature of the recommended program along with the need for limited additional infrastructure for a company like 4P Foods, makes this assessment and subsequent possible while limiting the risk of overextending.
 
@@ -27,7 +27,7 @@ The Federal and DC governments have  large datasets gathered from 10-year census
 - [DC Open Data 2020 Census Data](https://opendata.dc.gov/datasets/DCGIS::census-blocks-in-2020/about) 6014 records with 32 attributes of DC Demographic data
 - [DC Open Data Address Points](https://opendata.dc.gov/datasets/DCGIS::address-points/about) 148,709 records with 50 attributes of DC Address data
 
-DC also mainatains detailed shape files and supporting attributes on its Public Schools, Farmers Markets, and Grocery Stores: 
+DC also maintains detailed shape files and supporting attributes on its Public Schools, Farmers Markets, and Grocery Stores: 
 
 - [DC Open Data Public Schools](https://opendata.dc.gov/datasets/DCGIS::public-schools/about) 122 record shapefile with 32 attributes of Elementary School data
 - [DC Open Data Public School Attendance Areas](https://opendata.dc.gov/datasets/DCGIS::school-attendance-zones-elementary/about) 74 record shapefile with 4 attributes of Elementary School Attendance Zone data
@@ -36,7 +36,7 @@ DC also mainatains detailed shape files and supporting attributes on its Public 
 
 Supporting this analysis is the Food Desert specific USDA analysis based on Census and ACS datasets:
 
-- [USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and [2010 to 2020 Census Tract Crosswalk](https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html) 3130 recods with 40 attributes of Food Access Demographic data; updated regularly based on 2010 Census Tracts
+- [USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and [2010 to 2020 Census Tract Crosswalk](https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html) 3130 records with 40 attributes of Food Access Demographic data; updated regularly based on 2010 Census Tracts
 - [USDA Community Supported Agriculture Directory](https://www.ams.usda.gov/local-food-directories/csas) 939 records of 5 attributes detailing Community Supported Agriculture (CSA) organizations
 
 ## Algorithms
@@ -58,7 +58,7 @@ Food Deserts are a relatively straight forward analysis to complete.  The bigges
 
 The Delivering to Washington DC Food Deserts presentation summarizes the findings in graphical format including the following key elements:
 
-- **Introduction ** to the challenges of Food Deserts; with additional presentation time this chart could be expanded signficantly
+- **Introduction** to the challenges of Food Deserts; with additional presentation time this chart could be expanded significantly
 - Overview of  **4P Foods**, an innovative startup bringing a new agricultural model of support to local farmers and positive impact to the local community
 - **Serving the Community** which highlights the most underserved residential addresses in Ward 7 and 8 along with the Elementary Schools who could serve as fresh, good quality food delivery hubs
 - **4P Foods Business Return** which shows that even for a modest  customer base on limited income, this can bring Revenue to 4P Foods
