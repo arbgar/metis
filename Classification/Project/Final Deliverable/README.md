@@ -15,17 +15,15 @@ The government classifies a bridge that is in Poor Condition as a bridge that is
 
 Fortunately, ARTBA and others have gained the attention of lawmakers who are earmarking $3.265B for a 5-year Bridge Reinvestment Program under the proposed Infrastructure Investment and Jobs Act. While this is significant funding, it is likely insufficient to address current deficiencies, let alone the deficiencies that are developing in Bridges in Fair Condition.
 
-This project developed a Bridge Condition Model which classifies National Highway System (NHS) Bridges by their features and provides a probability of Structural Deficiency in an individual NHS Bridge.  With this information, organizations such as the American Society for Civil Engineers can augment the existing Inspection based assessments with analysis predicting Structural Deficiency.  This added information will help prioritize Bridge renovation, repair and replacement as well as make the case for additional infrasturcture investment.
+This project developed a Bridge Condition Model which classifies National Highway System (NHS) Bridges by their features and provides a probability of Structural Deficiency in an individual NHS Bridge.  With this information, organizations such as the American Society for Civil Engineers can augment the existing Inspection based assessments with analysis predicting Structural Deficiency.  This added information will help prioritize Bridge renovation, repair and replacement as well as make the case for additional infrastructure investment.
 
 ## Design
 
-Food Deserts are a significant challenge in the United States, both in rural and urban communities.  The USDA defines a Food Desert as a low-income census tract where a substantial number or substantial share of residents do not have easy access to a supermarket or large grocery store. Generally, this distance is 0.5 miles in urban locations and 10 miles in rural locations.  The challenge is so severe in Washington DC, particularly in Wards 7 and 8, that DC Hunger Solutions has set closing gaps at a distance of 1 mile as its goal.
-
-Supporting the DC Hunger Solutions approach, this analysis sets the definition of a Food Desert at 1600 meters (approximately 1 mile) and assesses the impact to all, not just low income, populations.  For the DC Hunger Solutions community approach to be viable, there will need to be residents of all economical situations.  The pilot nature of the recommended program along with the need for limited additional infrastructure for a company like 4P Foods, makes this assessment and subsequent possible while limiting the risk of overextending.
+ 
 
 ## Data
 
-The Federal government has a [National Bridge Inventory(NBI)](https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm) which is updated annually by each State and Territory.  This inventory consists of 732,552 bridges with 123 features including,
+The Federal government has a [National Bridge Inventory (NBI)](https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm) which is updated annually by each State and Territory.  This inventory consists of 732,552 bridges with 123 features including,
 
 - Basic Information,
 - Design, 
