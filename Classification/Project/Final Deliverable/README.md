@@ -19,7 +19,11 @@ This project developed a Bridge Condition Model which classifies National Highwa
 
 ## Design
 
- 
+Bridge Conditions are rated as Poor, Fair, and Good as described above.  Once any component of a Bridge is rated as Poor, it is considered Structurally Deficient.  Structurally Deficiency makes a good Target because it is a binary Yes or No.
+
+Because most of the features associated with each Bridge are categorical, this project is well suited for a Classification Model.  For each of the features selected, with the exception of Latitude / Longitude, there are a limited number of numerical categories. 
+
+By running a Classification Model, we are able to get predictions of whether a Bridge may be or become Structurally Deficient based on its features.  Because there is an element of time in this analysis and a high Recall is so important, more interesting is to look at the probability of Structural Deficiency and use that information to inform funding and advocacy.
 
 ## Data
 
