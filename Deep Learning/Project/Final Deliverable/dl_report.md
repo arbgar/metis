@@ -86,9 +86,9 @@ From this point I increased the data and epochs.  I attempted a variety of model
 
 ## Communication
 
-The *Mining Magnificent Mushrooms* presentation summarizes the findings in graphical format including the following key elements:
+The *Mining Magnificent Mushrooms* presentation summarizes the findings in graphical format:
 
-- **The Case for Foraging ** which introduces the health importance of mushrooms and overviews varieties and foraging.
+- **The Case for Foraging**  which introduces the health importance of mushrooms and overviews varieties and foraging.
 - **Answering the Question** which overviews the dataset and introduces the binary classification problem of edible or poisonous. It also alludes to the difficulty with this modeling design pattern.
 - **Classification Process** which decribes the modeling including architectures and parameters.
 - **Delectable or Dangerous** which summarizes the modeling results.
