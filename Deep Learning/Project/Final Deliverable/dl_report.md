@@ -1,6 +1,6 @@
 ![](https://github.com/arbgar/metis/blob/main/Deep%20Learning/Project/Deliverable/dl_picture.png?raw=true)
 
- Photo by [Guido Blokker](https://unsplash.com/@gblokker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/mushroom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+ *Photo by [Guido Blokker](https://unsplash.com/@gblokker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/mushroom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 # Mining Magnificent Mushrooms
 
