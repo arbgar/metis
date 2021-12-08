@@ -55,7 +55,7 @@ I did attempt to lemmatize the code, but it was taking a long time without signi
 
 The *Climate Change around the World* presentation summarizes the findings in graphical format including the following key elements:
 
-- **COP26 United Nations Climate Change Conference ** which introduces the climate change challenge
+- **COP26 United Nations Climate Change Conference** which introduces the climate change challenge
 - **Understanding World Opinion** which introduces the purpose of the report
 - **The GDELT Project: Worldwide News Feed** which overviews the news source and dataset
 - **Headlines More Positive** shows overall news headline polarity two months prior and 1 week after the start of the conference
