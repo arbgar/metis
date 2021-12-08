@@ -27,7 +27,7 @@ The data includes the news article headline, URL, country of origin, language, a
 
 # Tools
 
-The previous toolset will be updated for pipeline processing and web deployment to include MongoDB, PySpark and Flask. Given the Google translation, Google Cloud will be the target environment.
+The previous toolset will be updated for pipeline processing and web deployment to include MongoDB or SQLite and Flask or Streamlit on Heroku.  I don't believe the dataset will require big data tools such as cloud processing or Spark but that will be evaluated by the MVP.
 
 # MVP Objective
 
