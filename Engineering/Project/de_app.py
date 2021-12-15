@@ -1,37 +1,79 @@
 """
 Make sure to install streamlit with `pip install streamlit`.
 
-Run `streamlit hello` to get started!
-
-Streamlit is *V* cool, and it's only going to get cooler (as of February 2021):
-
-https://discuss.streamlit.io/t/override-default-color-palette/9088/2
-
 To run this app:
 
 1. cd into this directory
 2. pipenv shell
-2. Run `streamlit run de_app.py`
+3. Requirements.txt in directory
+4. Run `streamlit run de_app.py`
 """
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import streamlit as st
+from sqlalchemy  import create_engine
 
-# PART 1
+# HEADER
 
-# st.write('''
-# # Welcome To Streamlit!
-# In this streamlit app we will cover:
+st.image("https://raw.githubusercontent.com/arbgar/metis/main/NLP/Project/Deliverable/Header.png",
+	width=700,
+        )
 
-# - Markdown
-# - Importing Data
-# - Displaying DataFrames
-# - Graphing
-# - Interactivity with Buttons
-# - Mapping
-# - Making Predictions with User Input
-# ''')
+st.write('''
+*Photo created with [The GDELT Project](https://www.gdeltproject.org/)*
+
+
+# Climate Change around the World
+
+In 2015 World Leaders came together at the [COP21 United Nations Climate Change Conference](https://en.wikipedia.org/wiki/Paris_Agreement) in Paris France.  From this conference came the Paris Agreement, also known as the Paris Accord and Paris Climate Accord.  The Agreement set goals to minimize the rise in global temperature as well as emissions reductions.  196 parties signed on to the Agreement.  Recently World Leaders reconvened at the [COP26  United Nations Climate Change Conference](https://en.wikipedia.org/wiki/2021_United_Nations_Climate_Change_Conference) in Glasgow Scotland.  The meeting comes as expected results have not been achieved and commitments are wavering.  
+
+This project reviews world news coverage surrounding the 2021 United Nations Climate Change Conference to better understand world opinions about this shared challenge. In doing so, the analysis identifies key topics by country and geographic sub-region. Subsequent analysis assessed the subjectivity, and polarity associated with those topics. The analysis helps scope the challenges in and commitment to resolving climate change issues. The outcomes yield an understanding of world opinion and commitment to climate change for an organization such as the [United Nations Dag Hammarskjöld Library](https://www.un.org/en/library). 
+''')
+
+# CONNECT DATABASE: COUNTRIES AND MAP COUNTRIES
+
+# engine       = create_engine("sqlite:///Documents/GitHub/metis/Engineering/Project/hl.db")
+
+# locations = pd.read_sql('SELECT DISTINCT lat, lon FROM headlines LEFT JOIN region_country ON country=CountryorArea',con = engine)
+
+# locations['lat'] = locations['lat'].astype(float) 
+# locations['lon'] = locations['lon'].astype(float) 
+
+# st.dataframe(locations) 
+    
+# st.map(locations.loc[:,['lat','lon']],zoom(3))
+
+
+# CONNECT DATABASE: REGIONS AND PLOT ARTICLE QUANTITY
+
+engine       = create_engine("sqlite:///Documents/GitHub/metis/Engineering/Project/hl.db")
+
+regions = pd.read_sql("SELECT RegionName, country, COUNT(arttitle) FROM headlines LEFT JOIN region_country ON country=CountryorArea GROUP BY RegionName, country",con = engine)
+
+regions.rename(columns={'RegionName': 'Region', 'country': 'Country', 'COUNT(arttitle)': 'Article Count'}, inplace=True)
+
+st.sidebar.write('Which Region would you like to analyze?')
+region = st.sidebar.radio('',('Africa', 'Americas', 'Asia', 'Europe', 'Oceania'))
+
+st.sidebar.write('Countries within the Region:')
+
+st.sidebar.dataframe(regions.loc[regions['Region']==region][['Country']],225)
+
+# CONNECT DATABASE: REGIONS AND PLOT ARTICLES, SENTIMENT, and SUBJECTIVITY OVER TIME
+
+sentiment = pd.read_sql("SELECT RegionName, COUNT(arttitle), SUBSTRING(date_time,1,8) AS Date, AVG(sentiment), AVG(polarity) FROM headlines LEFT JOIN region_country ON country=CountryorArea GROUP BY RegionName, Date",con = engine)
+
+sentiment.rename(columns={'RegionName': 'Region', 'COUNT(arttitle)': 'Article Count','AVG(sentiment)': 'Subjectivity', 'AVG(polarity)':'Polarity'}, inplace=True)
+
+st.write('### Article Count Sep - Nov 2021, COP26 (30 Oct - 12 Nov 2021)')
+st.line_chart(sentiment.loc[sentiment['Region']==region][['Article Count']])
+
+st.write('### Subjective and Polarity Sep - Nov 2021, COP26 (30 Oct - 12 Nov 2021)')
+st.write('Subjectivity 0: Objective, 1: Subjective')
+st.write('Polarity -1: Negative, 1 Positive')
+st.line_chart(sentiment.loc[sentiment['Region']==region][['Subjectivity', 'Polarity']])
 
 # PART 2
 
@@ -107,47 +149,5 @@ import streamlit as st
 # price_filter = data['PRICE'] < price_input
 # st.map(data.loc[price_filter, ['lat', 'lon']])
 
-# PART 6
 
-# st.write(
-# '''
-# ## Train a linear Regression Model
-# Create a model to predict house price from sqft and number of beds
-# '''
-# ) 
-
-# from sklearn.linear_model import LinearRegression
-# from sklearn.model_selection import train_test_split
-
-# clean_data = data.dropna(subset=['PRICE', 'SQUARE FEET', 'BEDS'])
-
-# X = clean_data[['SQUARE FEET', 'BEDS']]
-# y = clean_data['PRICE']
-
-# X_train, X_test, y_train, y_test = train_test_split(X, y)
-
-# # Notice the R^2 value is changing. This file is run on every update!
-# # X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
-
-# lr = LinearRegression()
-
-# lr.fit(X_train, y_train)
-# st.write(f'R²: {lr.score(X_test, y_test):.3f}')
-
-# PART 7
-
-# st.write(
-# '''
-# ## Make predictions with the trained model from user input
-# '''
-# )
-
-# sqrft = st.number_input('Square Footage of House', value=2000)
-# beds = st.number_input('Number of Bedrooms', value=3)
-
-# input_data = pd.DataFrame({'sqrft': [sqrft], 'beds': [beds]})
-# pred = lr.predict(input_data)[0]
-# st.write(
-# f'Predicted Sale Price of House: ${int(pred):,}'
-# )
 
