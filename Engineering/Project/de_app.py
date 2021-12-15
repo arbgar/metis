@@ -45,36 +45,47 @@ This project reviews world news coverage surrounding the 2021 United Nations Cli
     
 # st.map(locations.loc[:,['lat','lon']],zoom(3))
 
+	# CONNECT DATABASE: REGIONS AND PLOT ARTICLE QUANTITY
 
-# CONNECT DATABASE: REGIONS AND PLOT ARTICLE QUANTITY
+try:
+	engine       = create_engine("sqlite:///Documents/GitHub/metis/Engineering/Project/hl.db")
 
-engine       = create_engine("sqlite:///Documents/GitHub/metis/Engineering/Project/hl.db")
+	regions = pd.read_sql("SELECT RegionName, country, COUNT(arttitle) FROM headlines LEFT JOIN region_country ON country=CountryorArea GROUP BY RegionName, country",con = engine)
 
-regions = pd.read_sql("SELECT RegionName, country, COUNT(arttitle) FROM headlines LEFT JOIN region_country ON country=CountryorArea GROUP BY RegionName, country",con = engine)
+	regions.rename(columns={'RegionName': 'Region', 'country': 'Country', 'COUNT(arttitle)': 'Article Count'}, inplace=True)
+except:
+	st.write('db read')
 
-regions.rename(columns={'RegionName': 'Region', 'country': 'Country', 'COUNT(arttitle)': 'Article Count'}, inplace=True)
+try:
+	st.sidebar.write('Which Region would you like to analyze?')
+	region = st.sidebar.radio('',('Africa', 'Americas', 'Asia', 'Europe', 'Oceania'))
 
-st.sidebar.write('Which Region would you like to analyze?')
-region = st.sidebar.radio('',('Africa', 'Americas', 'Asia', 'Europe', 'Oceania'))
+	st.sidebar.write('Countries within the Region:')
 
-st.sidebar.write('Countries within the Region:')
-
-st.sidebar.dataframe(regions.loc[regions['Region']==region][['Country']],225)
-
+	st.sidebar.dataframe(regions.loc[regions['Region']==region][['Country']],225)
+except:
+	st.write('sidebar')
+	
 # CONNECT DATABASE: REGIONS AND PLOT ARTICLES, SENTIMENT, and SUBJECTIVITY OVER TIME
 
-sentiment = pd.read_sql("SELECT RegionName, COUNT(arttitle), SUBSTRING(date_time,1,8) AS Date, AVG(sentiment), AVG(polarity) FROM headlines LEFT JOIN region_country ON country=CountryorArea GROUP BY RegionName, Date",con = engine)
+try:
 
-sentiment.rename(columns={'RegionName': 'Region', 'COUNT(arttitle)': 'Article Count','AVG(sentiment)': 'Subjectivity', 'AVG(polarity)':'Polarity'}, inplace=True)
+	sentiment = pd.read_sql("SELECT RegionName, COUNT(arttitle), SUBSTRING(date_time,1,8) AS Date, AVG(sentiment), AVG(polarity) FROM headlines LEFT JOIN region_country ON country=CountryorArea GROUP BY RegionName, Date",con = engine)
 
-st.write('### Article Count Sep - Nov 2021, COP26 (30 Oct - 12 Nov 2021)')
-st.line_chart(sentiment.loc[sentiment['Region']==region][['Article Count']])
+	sentiment.rename(columns={'RegionName': 'Region', 'COUNT(arttitle)': 'Article Count','AVG(sentiment)': 'Subjectivity', 'AVG(polarity)':'Polarity'}, inplace=True)
+except:
+	st.write('db read 2')
 
-st.write('### Subjective and Polarity Sep - Nov 2021, COP26 (30 Oct - 12 Nov 2021)')
-st.write('Subjectivity 0: Objective, 1: Subjective')
-st.write('Polarity -1: Negative, 1 Positive')
-st.line_chart(sentiment.loc[sentiment['Region']==region][['Subjectivity', 'Polarity']])
+try:
+	st.write('### Article Count Sep - Nov 2021, COP26 (30 Oct - 12 Nov 2021)')
+	st.line_chart(sentiment.loc[sentiment['Region']==region][['Article Count']])
 
+	st.write('### Subjective and Polarity Sep - Nov 2021, COP26 (30 Oct - 12 Nov 2021)')
+	st.write('Subjectivity 0: Objective, 1: Subjective')
+	st.write('Polarity -1: Negative, 1 Positive')
+	st.line_chart(sentiment.loc[sentiment['Region']==region][['Subjectivity', 'Polarity']])
+except:
+	st.wrte('plots')
 # PART 2
 
 # st.write(
