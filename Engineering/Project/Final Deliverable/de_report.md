@@ -33,7 +33,7 @@ The news  headlines were relatively easy to analyze with standard Natural Langua
 - Tableau for NLP visualization:
   -  [World Map of News Headlines](https://public.tableau.com/app/profile/alison.garrett/viz/nlp_map/Dashboard1)
   - [Characterization of News Headlines](https://public.tableau.com/app/profile/alison.garrett/viz/de_headlines/Dashboard1)
-  - [Positive / Negative Sentiment of News Headlines](https://public.tableau.com/app/profile/alison.garrett/viz/de_local/Dashboard2)
+  - [Positive / Negative Sentiment of News Headlines](https://public.tableau.com/app/profile/alison.garrett/viz/de_headlines/Dashboard2#2)
   - [Top Topics by Region with Sentiment](https://public.tableau.com/app/profile/alison.garrett/viz/de_local/Dashboard1)
 
 ## Communication
